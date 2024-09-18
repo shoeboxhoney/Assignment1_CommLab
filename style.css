@@ -1,11 +1,357 @@
 body {
-    background-color: peachpuff;
+  background-color: #d2dfee;
+  font-family: 'Autour One';
 }
+
 h1 {
-    color: blue;
+    color: rgb(6, 85, 36);
+    font-family: 'Autour One';
+    font-size: 3em;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;
 }
+
+
+h2 {
+  color: rgb(6, 85, 36);
+  font-family: 'Autour One';
+  font-size: 1.5em;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 5px;
+}
+
 p{
-    color: red;
-    font-family: verdana;
-    font-size: 300%;
+    color: whitesmoke;
+    background-color: #68a972;
+    font-family: 'Autour One';font-size: 22px;
+    border: 2px solid rgb(7, 56, 24);
+    border-radius: 10px;
+    margin-top: 40px;
+  margin-bottom: 100px;
+  margin-right: 400px;
+  margin-left: 320px;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  /* position: absolute; */
+}
+
+
+
+@keyframes moveAndFade {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-40%, -50%);
+    }
+}
+
+/* Image Styling */
+
+/* Bottom-left leaf */
+#leaf-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px; 
+    height: auto;
+    z-index: 100;
+    opacity: 0.8;
+    transform: rotate(45deg);
+}
+
+/* Top-right leaf */
+#leaf-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: auto;
+    z-index: 100;
+    opacity: 0.8;
+    transform: rotate(-135deg);
+}
+
+#orange_cat {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: auto;
+  z-index: 100;
+  overflow: hidden;
+}
+
+#black_cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: auto;
+  z-index: 100;
+}
+
+#festive_cat {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  width: 400px;
+  height: auto;
+  z-index: 100;
+}
+
+#four_cats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#headshot {
+  position: absolute;
+  top: 215px;
+  left: 270px;
+  width: 320px; 
+  height: auto;
+  border: 2px solid rgb(7, 56, 24);
+  border-radius: 10px;
+}
+
+#happy_cat {
+  position: absolute;
+  top: 125px;
+  left: 370px;
+  width: 300px; 
+  height: auto;
+  transform: rotate(-18deg);
+  z-index: 100;
+}
+
+
+/* Center the menu and stack buttons horizontally */
+#menu {
+  width: 200px;  /* Set a fixed width for the buttons */
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  flex-direction: row;  /* Stack the buttons horizontally */
+  justify-content: center;  /* Center buttons horizontally */
+  align-items: flex-start;  /* Center buttons vertically */
+  margin: 0 auto;
+}
+
+/* Style for the buttons */
+#menu button {
+  width: 200px;  /* Set a fixed width for the buttons */
+  padding: 30px;
+  margin: 0 10px;  /* Adds horizontal spacing between buttons */
+  font-size: 1.2em;  /* Adjust the font size */
+  cursor: pointer;
+  text-align: center;  /* Center text inside the button */
+  justify-content: center;  /* Center buttons horizontally */
+  align-items: middle;  /* Center buttons vertically */
+  margin-top: 100px;
+  background-color:   #68a972;  /* A teal background for more vibrancy */
+  color: #ffffff;  /* White text for contrast */
+}
+
+
+
+/* Hover effect for buttons */
+#menu button:hover {
+  background-color: #00b09f;
+}
+
+#menu button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Position the button container in the upper left corner */
+#button-container {
+    position: absolute;
+    top: 20px;  /* Distance from the top of the page */
+    left: 20px;  /* Distance from the left of the page */
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Style for the button itself */
+#button-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Autour One';
+    border-radius: 10px;
+    background-color: #68a972;  /* A teal background for more vibrancy */
+    color: #ffffff;  /* White text for contrast */
+}
+.button-container {border-radius: 12px;}
+
+#button-container button:hover {
+  background-color: #00b09f;
+}
+
+#button-container button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* unvisited link */
+a:link {
+    color: whitesmoke;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+
+/* Center the video container within the frame */
+#video-material {
+    display: absolute; /*(flex) */
+    justify-content: center;  /* Horizontally center the video */
+    align-items: center;      /* Vertically center the video */
+    height: 50%;             /* Take up the full height of the frame */
+    width: 60%;              /* Take up the full width of the frame */
+    margin-left: 390px;
+    margin-top: 70px;
+}
+
+/* Style for the video itself */
+#video-material video {
+    max-width: 80%;      /* Set the maximum width of the video*/
+    max-height: 80vh;    /*Set the maximum height of the video to fit within the viewport */
+    border: 10px solid rgb(6, 85, 36); /* Optional: Add a border to the video */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for effect */
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin-left: 390px;
+  margin-top: 70px;
+  border: 10px solid rgb(6, 85, 36); /* Optional: Add a border to the video */
+  border-radius: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #68a972;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+  #menu {
+      flex-direction: column;
+      padding: 20px 0;
+  }
+  #menu button {
+      width: 80%;  /* Adjust width for smaller screens */
+      margin: 10px auto;  /* Center buttons */
+  }
 }

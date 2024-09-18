@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+    <link rel="stylesheet"href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Keepsakes</title>
+</head>
+<body>
+    <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/source.gif" alt="Leaf" id="leaf-bottom-left" />
+    <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/source.gif" alt="Leaf" id="leaf-top-right" />
+
+        <h1> Campus Keepsakes </h1>
+        <h2> (A Video Project) </h2>
+
+     <!-- Menu Frame -->
+<div id="menu" >
+    <nav>
+        <button style="font-family: 'Autour One'; border-radius: 10px;" onclick="showFrame('about')">About</button>
+        <button style="font-family: 'Autour One'; border-radius: 10px;" onclick="showFrame('video-material')">Video</button>
+        <button style="font-family: 'Autour One'; border-radius: 10px;" onclick="showFrame('gallery')">Gallery</button>
+        <button style="font-family: 'Autour One'; border-radius: 10px;" onclick="showFrame('contacts')">Contact Me!</button>
+        <img src = "/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/four_cats_transparent.gif" alt="four_cats" id="four_cats">
+    </nav>
+</div>
+
+    <!-- About Frame -->
+    <div class="frame" id="about" style="display:none;">
+
+        <img src = "/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/festive_cat.gif" alt="festive_cat" id="festive_cat">
+        <img src = "/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_2083.jpg" alt="headshot" id="headshot">
+        <p style="text-align: center; margin-left: 600px; margin-right: 200px">"Campus Keepsakes" is a video project by Samira Aldybergenova, a student at NYU Abu Dhabi, 
+            that captures the essence of campus life through a short film showcasing various sceneries at 
+            different times of the day, accompanied by familiar background sounds. </br> </br>
+            From the hum of conversations and the clatter of dishes at D2, to the rustling of palm leaves in the wind, 
+            the video encapsulates the subtle, everyday moments that define the NYUAD experience. 
+            These are the sounds we often take for granted, but as my time here grows shorter, 
+            I’ve come to cherish them more deeply, realizing they are what truly make NYUAD feel like home. </p>
+
+            <div id="button-container">
+                <button onclick="backToMenu()">Back to Menu</button>
+            </div>
+    </div>
+
+
+  <!-- Contacts Frame -->
+  <div class="frame" id="contacts" style="display:none; padding-left: 50px;">
+
+    <p>Mobile Number: <b><a href="tel:+971585920378"> +971 58 592 03 78</a></b> </p>
+    <p>Linkedin: <b> <a href="https://www.linkedin.com/in/samira-aldybergenova/"> Samira Aldybergenova</a></b></p>
+    <p>Gmail: <b><a href="mailto:sa7449@nyu.edu"> sa7449@nyu.edu</a></b></p>
+    <p>Instagram: <b><a href="https://www.instagram.com/thesamphony/" target="_blank"> @thesamphony</a></b></p>
+    <div id="button-container">
+        <button onclick="backToMenu()">Back to Menu</button>
+    </div>
+    <img src ="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/sleepy_cat.gif" alt="orange_cat" id="orange_cat" />
+
+</div>
+
+<!-- Gallery Frame -->
+<div class="frame" id="gallery" style="display:none;">
+    <img src ="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/happy_cat.gif" alt="happy_cat" id="happy_cat" />
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4225.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4226.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4227.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4228.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4229.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/IMG_4230.jpg" style="width:100%">
+        
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+  </div>
+    <div id="button-container">
+        <button onclick="backToMenu()">Back to Menu</button>
+    </div>
+</div>
+
+<!-- Video Material Frame -->
+<div class="frame" id="video-material" style="display:none;">
+    <img src ="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/black cat.gif" alt="black_cat" id="black_cat" />
+    <img src ="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/orangecat.gif" alt="orange_cat" id="orange_cat" />
+    <video controls>
+        <source src="/Users/samiraaldybergenova/Desktop/w2b/media(mp4, jpg)/campus_keepsakes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="button-container">
+        <button onclick="backToMenu()">Back to Menu</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
