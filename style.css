@@ -240,12 +240,12 @@ a:link {
     align-items: center;      /* Vertically center the video */
     height: 50%;             /* Take up the full height of the frame */
     width: 60%;              /* Take up the full width of the frame */
-    margin-left: 390px;
+    margin-left: 480px;
     margin-top: 70px;
 }
 
 /* Style for the video itself */
-#video-material video {
+#video-material iframe {
     max-width: 80%;      /* Set the maximum width of the video*/
     max-height: 80vh;    /*Set the maximum height of the video to fit within the viewport */
     border: 10px solid rgb(6, 85, 36); /* Optional: Add a border to the video */
